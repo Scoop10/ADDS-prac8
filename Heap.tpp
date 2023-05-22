@@ -76,7 +76,7 @@ void Heap<T>::remove(T value) {
   // TO BE IMPLEMENTED
   for(int i = 0; i < values.size(); i++){
     if(values.at(i) == value){
-      swap(values[i], values[values.size()-1]);
+      std::swap(values[i], values[values.size()-1]);
       values.pop_back();
       break;
     }
